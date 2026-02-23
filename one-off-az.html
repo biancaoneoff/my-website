@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Off AZ LLC Contact</title>
+    <link rel="stylesheet" href="one-off-az.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="company-name">One Off AZ LLC</h1>
+    </div>
+    <div class="contact-section">
+        <div class="ContactMe">
+            <h1><strong>Contact Bianca Betancourt</strong></h1>
+            <h2><span class="highlight">Phone:</span><br>(623)294-0942</h2>
+            <h2><span class="highlight">Email:</span><br>
+                <a href="mailto:bianca@oneoffaz.com">bianca@oneoffaz.com</a>
+            </h2>
+            <h2><span class="highlight">Address:</span><br>Bianca Betancourt <br>AZ & Associates <br>7616 W Thunderbird
+                Rd
+                <br>Peoria, AZ 85381
+            </h2>
+        </div>
+        <div class="ContactYou">
+            <div class="contact-form">
+                <h2>Let us contact you! <br>Please fill out the form below</h2>
+                <form id="loanForm" action="https://formly.email/submit" method="post">
+                    <input type="hidden" name="access_key" value="b3c220a034204cea8c7ce89dda29364d">
+                    <!-- First Name -->
+                    <label for="borrower1FirstName">1st Borrower: First Name:<span class="required">*</span></label>
+                    <input type="text" id="borrower1FirstName" name="borrower1FirstName" placeholder="Enter your first name" required>
+                    <!-- Last Name -->
+                    <label for="borrower1LastName">1st Borrower: Last Name:<span class="required">*</span></label>
+                    <input type="text" id="borrower1LastName" name="borrower1LastName" placeholder="Enter your last name" required>
+                    <!-- 2nd First Name -->
+                    <label for="borrower2FirstName">2nd Borrower: First Name:</label>
+                    <input type="text" id="borrower2FirstName" name="borrower2FirstName" placeholder="Enter your first name">
+                    <!-- 2nd Last Name -->
+                    <label for="borrower2LastName">2nd Borrower: Last Name:</label>
+                    <input type="text" id="borrower2LastName" name="borrower2LastName" placeholder="Enter your last name">
+                    <!-- Phone -->
+                    <label for="phone">Phone:<span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" required>
+                    <!-- Email -->
+                    <label for="email">Email:<span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                    <!--Credit Score-->
+                    <label for="creditScoreRange">What is your estimated credit score range?</label>
+                    <select id="creditScoreRange" name="creditScoreRange"> <option value="">Please Select</option> <option value="750">750 +</option> <option value="700-749">700–749</option> <option value="600-650">600-650</option> <option value="580">580 and below</option> <option value="unsure">Unsure</option> </select>
+                    <!--Annual Income Rangee-->
+                    <label for="annualIncomeRange">What is your estimated annual income range?</label>
+                    <select id="annualIncomeRange" name="annualIncomeRange"> <option value="">Please Select</option> <option value="under50000">Under $50,000</option> <option value="50-99">$50,000-$99,999</option> <option value="100-149">$100,000-$149,999</option> <option value="150-199">$150,000-$199,999</option> <option value="200+">$200,000 +</option> <option value="pernotsay">Prefer not to say.</option> </select>
+                    <!--Money Saved-->
+                    <label for="amountSaved">How much money do you have saved?</label>
+                    <input type="text" id="amountSaved" name="amountSaved" placeholder="$1,000">
+                    <!-- Questions -->
+                    <label for="questions">Questions / Comments:</label>
+                    <textarea id="questions" name="questions" placeholder="Write your question here..."
+                        rows="5"></textarea>
+
+                    <!-- Star means required-->
+                    <p style="font-size: 0.9em;"><span class="required">*</span> is required</p>
+
+                    <!-- required checkbox for phone-->
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="smsAgreement">
+                        <span style="font-size: 0.8em;">We use SMS to confirm appointments, send reminders, and notify clients of schedule updates or important changes. 2. You can cancel the SMS service at any time. Just text "STOP". After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us. If you want to join again, just sign up as you did the first time, and we will start sending SMS messages to you again. 3. If you are experiencing issues with the messaging program you can reply with the keyword “HELP” for more assistance, or you can get help directly at bianca@oneoffaz.com. 4. Carriers are not liable for delayed or undelivered messages. 5. As always, message and data rates may apply for any messages sent to you from us and to us from you. Message frequency may vary. If you have any questions about your text plan or data plan, it is best to contact your wireless provider. 6. If you have any questions regarding privacy, please read our <a href="https://biancabetancourt.azandassociates.com/privacy-policy/">Privacy Policy</a>.</span>
+                    </label> 
+
+                    <!-- Submit Button -->
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="one-off-az.js"></script>
+</body>
+
+</html>
